@@ -1,0 +1,407 @@
+:root {
+  --main-color: rgb(140, 200, 185);
+}
+
+/* Container of the top */
+#container {
+  width: 100%;
+  height: 30%;
+  background: rgb(51 84 84);
+  text-align: right;
+  padding: 20px;
+}
+
+/* To all the document except the container */
+main {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* The h1 */
+#header {
+  text-align: start; /* Puts h1 at the beggining */
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-weight: lighter;
+  letter-spacing: 1mm; /* leaves space between the letters in the title */
+  color: rgb(51 84 84);
+  background-color: var(--main-color);
+  height: 25%;
+  width: 35%;
+  padding: 10px;
+  margin-bottom: -30px;
+}
+
+/* Navbar */
+#ul {
+  display: inline-flex; /* Puts list elements inline*/
+}
+
+.item {
+  margin: -40px 50px 0px 10px;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none; /* removes the list's dots */
+  color: rgb(254 252 241);
+  padding: 10px;
+}
+
+.nav ul li a:hover {
+  color: rgb(51 84 84);
+}
+
+/* Items of the navbar */
+.item a {
+  padding-bottom: 5px;
+  border-bottom: var(--main-color) solid 3px;
+}
+
+.item a:hover {
+  background: var(--main-color);
+  padding: 10px;
+}
+
+/* Image from the top */
+img {
+  height: 300px;
+  width: 100%;
+}
+
+/* About me section */
+/* Text */
+.article {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: century;
+  line-height: 25px; /* space between lines*/
+}
+/* Image */
+.me {
+  float: right;
+  height: 25%;
+  width: 25%;
+  margin: 30px;
+  border-radius: 100%;
+}
+
+/* h2 titles */
+#work,
+#about-me,
+#contact-me {
+  margin: 10%;
+  display: flex; /* Puts h2 text aside*/
+}
+
+/* This changes the properties of the left headings */
+#work h2, #about-me h2, #contact-me h2 {
+  margin: 10px;
+  font-size: 60px;
+  color: var(--main-color);
+  border-right: var(--main-color) solid 4px; /* Puts the side line*/
+  padding: 20px; /* leaves space between the line and the text */
+  height: 200px;
+}
+
+/* Work projects buttons */
+#button1:hover,
+#button2:hover,
+#button3:hover,
+#button4:hover,
+#button5:hover {
+  opacity: 1;
+}
+
+#buttons {
+  margin-right: 5%;
+}
+
+/* Big button */
+#button1 {
+  background-image: url(./Images/QlF13TB.jpg);
+  margin: 1% 1% 1% 5%;
+  height: 300px;
+  width: 93%;
+  border: solid var(--main-color) 5px;
+  opacity: 0.8; /*To make the hoover opacity effect*/
+}
+
+#button2,
+#button3,
+#button4,
+#button5 {
+  height: 150px;
+  width: 45%;
+  border: solid var(--main-color) 5px;
+  opacity: 0.8;
+}
+
+/* Small buttons */
+#button2 {
+  background-image: url(./Images/tranvia-en-san-francisco-california\ copy.png);
+  margin: 1% 1% 1% 5%;
+}
+#button3 {
+  background-image: url(./Images/09-9226610_uploadsmember665562yourshot-665562-9226610jpg_igdjhxksrjifxjzu4rgbsw37bhp3eflutfvvbpyjwjhzlmh4iziq_3000x2000\ copy.png);
+  margin: 1% 1% 1% 1%;
+}
+
+#button4 {
+  background-image: url(./Images/pexels-photo-414171.jpg);
+  margin: 1% 1% 1% 5%;
+}
+
+#button5 {
+  background-image: url(./Images/Landscape-Layers-05\ copy.png);
+  margin: 1% 1% 1% 1%;
+}
+
+/* Big button text */
+#big-img {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  float: left;
+  background-color: var(--main-color);
+  height: 25%;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Small button text */
+.small {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  float: left;
+  background-color: var(--main-color);
+  height: 45%;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Label text inside the buttons */
+h4 p {
+  font-size: 10px;
+  margin: 5%;
+}
+
+/* Resume section */
+
+#Resume h2 {
+  margin: 20%;
+  font-size: 60px;
+  color: var(--main-color);
+  border-bottom: var(--main-color) solid 4px; /* Puts the side line*/
+  height: 100px;
+  width: 50%;
+  text-align: left;
+}
+
+#Resume {
+  display: inline-block;
+
+}
+
+
+#education,
+#certificates,
+#achievements,
+#skills,
+#languages {
+  margin: 10% 20px 10% 20px;
+  line-height: 25px;
+  text-align: left;
+  height: 200px;
+  width: 60%;
+}
+
+#certificates {
+  margin-bottom: 30%;
+}
+#achievements {
+  height: 90px;
+}
+
+#languages img {
+  height: 25px;
+  width: 140px;
+}
+
+h5 {
+  color: var(--main-color);
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* Resume lists decoration */
+#skills ul,
+#certificates ul {
+  list-style-type: disc;
+  margin-left: 7%;
+}
+
+.big-e {
+  font-size: 20px;
+}
+
+.small-e {
+  font-size: 12px;
+}
+
+
+
+/* Contact section */
+.contact {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.contact-a {
+  text-decoration: none;
+  margin: 43px;
+  color: black;
+  font-size: 25px;
+  border-bottom: var(--main-color) solid 2px;
+}
+
+.contact-a:hover {
+  color: var(--main-color);
+}
+
+/* Logos above the contact info */
+.img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 35px;
+}
+
+footer {
+  background: rgb(51 84 84);
+  height: 70px;
+  width: 100%;
+}
+
+/* Footer's text */
+h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* To adjust to a smaller display */
+@media only screen and (max-width: 1250px) {
+  /* Big button text */
+  #big-img {
+    width: 70%;
+  }
+
+  /* Small button text */
+  .small {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  /* Puts the header in the center */
+  #container {
+    height: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #header {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* Puts the navbar below the title */
+  .item {
+    margin: 30px 5px 25px 5px;
+    font-size: 18px;
+  }
+
+  /* Puts the image in the center, below the text */
+  .me {
+    float: none;
+    align-self: center;
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    border-radius: 100%;
+  }
+  /* Settings of the space above and below the about me text*/
+  .article {
+    margin-top: 10%;
+    margin-left: 0%;
+  }
+
+  #work,
+  #about-me,
+  #contact-me, #Resume {
+    text-align: center;
+    display: block;
+    height: 650px;
+  }
+
+  /* Headings of each section */
+  #work h2,
+  #about-me h2,
+  #contact-me h2{
+    margin: 5px;
+    font-size: 60px;
+    color: rgb(140, 200, 185);
+    border-bottom: rgb(140, 200, 185) solid 4px; /* Puts the side line*/
+    padding: 10px; /* leaves space between the line and the text */
+    height: 90px;
+    border-right: transparent;
+  }
+
+  #buttons {
+    display: block;
+    flex-direction: column;
+  }
+
+  #work {
+    height: 70%;
+  }
+
+  #button1 {
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  /* Small buttons */
+  #button2,
+  #button3,
+  #button4,
+  #button5 {
+    height: 200px;
+    width: 100%;
+    margin: 1% 1% 1% 5%;
+  }
+
+  /* Big button text */
+  #big-img {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .article {
+    margin-top: 80px;
+  }
+
+  #contact-me {
+    height: 600px;
+  }
+
+  #Resume {
+    height: 70%;
+  }
+}
